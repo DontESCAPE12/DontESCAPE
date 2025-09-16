@@ -27,7 +27,7 @@
       border-bottom: 2px solid #00c2a8;
     }
     .tab-nav {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       display: flex;
       list-style: none;
@@ -136,6 +136,35 @@
       transform: scale(1.05);
     }
     
+    .music-list {
+      background: rgba(0,194,168,0.1);
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #00c2a8;
+      margin: 15px 0;
+    }
+    
+    .music-list h4 {
+      color: #00c2a8;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .song-item {
+      margin: 8px 0;
+      padding-left: 15px;
+      position: relative;
+    }
+    
+    .song-item:before {
+      content: "♪";
+      color: #00c2a8;
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
     /* Easter Egg Styles */
     .easter-egg {
       text-align: center;
@@ -195,6 +224,7 @@
   <div class="tab-container">
     <ul class="tab-nav">
       <li><button class="tab-btn active" data-tab="channel">My Channel</button></li>
+      <li><button class="tab-btn" data-tab="about">About Me</button></li>
       <li><button class="tab-btn" data-tab="videos">Videos</button></li>
       <li><button class="tab-btn" data-tab="secret">🎮 Secret</button></li>
     </ul>
@@ -215,6 +245,36 @@
         ⚠️ Warning! This website is under construction.  
         <br>If you see any bugs or want any changes contact:  
         <br><strong>testingdevicesusa@gmail.com</strong>
+      </div>
+    </div>
+    
+    <!-- About Me Tab -->
+    <div class="tab-content" id="about">
+      <h1>About Me 🎖️</h1>
+      
+      <div class="card">
+        <h2>Who Am I? ⚡</h2>
+        <p>I'm a War Thunder YouTuber trying to reach 500 subscribers so I can be a Gaijin CCP (Community Content Partner)! Every subscription gets me closer to that goal and helps support the channel.</p>
+        <p>Join the journey and let's conquer the skies, seas, and land together! 🚁🚢🚗</p>
+      </div>
+
+      <div class="card">
+        <h2>My Musical Taste 🎵</h2>
+        <p>Music fuels my content creation! Here are my favorite artists and songs:</p>
+        
+        <div class="music-list">
+          <h4>Favorite Artists</h4>
+          <p><strong>TheFatRat</strong> - Amazing electronic music producer</p>
+          <p><strong>OneRepublic</strong> - Especially their Top Gun track "I Ain't Worried"</p>
+        </div>
+
+        <div class="music-list">
+          <h4>Favorite Songs</h4>
+          <div class="song-item"><strong>TheFatRat & Slaydit - Solitude</strong></div>
+          <div class="song-item"><strong>OneRepublic - I Ain't Worried</strong></div>
+        </div>
+        
+        <p>These tracks often inspire my video editing and keep me motivated during those long War Thunder grinding sessions! 🎧</p>
       </div>
     </div>
     
